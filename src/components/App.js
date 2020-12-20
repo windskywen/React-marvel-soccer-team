@@ -7,7 +7,8 @@ const App = () => {
 
     const [charaters, setCharacters] = useState([]);
     const [isPosition, setIsPosition] = useState(false);
-    const [isConfirm, setIsConfirm] = useState(false)
+    const [isConfirm, setIsConfirm] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     
     useEffect(() => {
         const url = 'https://gateway.marvel.com/v1/public/characters';
@@ -31,6 +32,7 @@ const App = () => {
             );
             const dataSource = await response.json();
             setCharacters(dataSource.data.results)
+            setIsLoading(true);
             // console.log('fethcing........')
         }
         
@@ -54,10 +56,15 @@ const App = () => {
     return (
         <div className="wrapper">
             <Team choosePosition={choosePosition} isConfirm={isConfirm} switchConfirm={switchConfirm}/>
-            <div className='content'>
-                <Characters characters={charaters}/>
-                <CharacterInfo isPosition={isPosition} toConfirm={toConfirm}/>
-            </div>
+            { !isLoading ? (
+                <div className="loading">
+                    <h1>Loading......</h1>
+                </div>) : (
+                <div className='content'>
+                    <Characters characters={charaters}/>
+                    <CharacterInfo isPosition={isPosition} toConfirm={toConfirm}/>
+                </div>
+            )}
         </div>
     )
 }

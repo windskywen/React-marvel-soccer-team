@@ -1,5 +1,6 @@
 import React from 'react';
 import Character from 'components/Character';
+import { is } from '@babel/types';
 
 class Characters extends React.Component {
 

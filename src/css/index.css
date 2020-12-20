@@ -3,6 +3,17 @@
     margin: 0 auto;
     /* background-color: #000000; */
 }
+
+.loading{
+    margin: 0 auto;
+    
+}
+
+.loading h1{
+    color: white;
+    text-align: center;
+}
+
 .content {
     /* border: 1px solid black; */
     display: flex;
