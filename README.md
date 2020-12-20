@@ -1,6 +1,9 @@
 # This App is developed by React
+Clone all the files in this repository
 
-## Steps to open this App
+### npm install
+
+### npm start
 
 ### 
 
