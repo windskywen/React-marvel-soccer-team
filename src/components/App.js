@@ -30,9 +30,8 @@ const App = () => {
                 }
             );
             const dataSource = await response.json();
-            console.log(dataSource);
             setCharacters(dataSource.data.results)
-            console.log('fethcing........')
+            // console.log('fethcing........')
         }
         
         fetchData();

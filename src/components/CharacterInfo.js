@@ -9,7 +9,6 @@ const CharacterInfo = (props) => {
     const [, setIsConfirm] = useState(false)
 
     const handleClick = () => {
-        // console.log('in CharacterInfo .... selectedPhoto',selectedPhoto)
         setIsConfirm(true);
         props.toConfirm(true)
     }
