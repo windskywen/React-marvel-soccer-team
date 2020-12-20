@@ -1,76 +1,66 @@
-
-.content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.team-wrapper{
-    border: 1px solid;
-    width: 1400px;
-    height: auto;
+.wrapper{
+    width: 100%;
     margin: 0 auto;
+    /* background-color: #000000; */
 }
-
-.member-wrapper{
-    border: 1px solid;
-    width: 1396px;
-    height: auto;
+.content {
+    /* border: 1px solid black; */
     display: flex;
-    justify-content: space-around
-}
-
-.member{
-    border: 1px solid red;
-    width: 200px;
-    height: 200px
-}
-
-.member-header{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.member-header h3 {
-    height: 10px;
-    margin-right: 30px;
-}
-
-.member-header select {
-    height: 30px;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 
 .char-wrapper{
-    background: orange;
-    width: 800px;
+    background: #99CCFF;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 710px;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-right: 40px;
+    padding: 6px 2px 20px 14px;
 
 }
 
 .character{
-    background: yellow;
-    width: 150px;
-    height: 200px;
+    background-color: rgba(105,105,105, 0.8);
+    border: 2px solid #666666;
+    border-radius: 8px;
+    width: 120px;
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 5px;
+    justify-content: flex-start;
+
+    margin: 10px 8px 0 8px;
 }
 
-.img{
-    width:120px;
-    height: 130px;
+.character:hover{
+    background: #FF9999;
+    border: 2px solid #696969;
+    border-radius: 8x;
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin: 10px 8px 0 8px;
+}
+
+.char-img{
+    width:80px;
+    height: 90px;
+    margin: 0 auto;
     padding: 13px 5px 0px 5px;
 }
 .char-name{
     margin: 0 auto;
 }
 
-.char-info-wrapper{
-    background: lightgreen;
-    width:30%;
-}
+
 

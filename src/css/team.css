@@ -1,0 +1,88 @@
+/* Team Component */
+.team-wrapper{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.team-wrapper h1{
+    color: white;
+    text-align: center;
+    height: 35px;
+}
+
+.member-wrapper{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.member{
+    border: 3px solid #00008b;
+    border-radius: 8px;
+    width: 230px;
+    height: 200px;
+}
+
+.member-choose{
+    /* background-color: rgba(210,105,30,0.8); */
+    background-color: rgba(255,20,147,0.8);
+    border: 3px solid #8b0000;
+    border-radius: 8px;
+    width: 230px;
+    height: 200px;
+}
+
+.member:hover{
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 230px;
+    height: 200px;
+}
+
+.member-header{
+    color: white;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+    /* background: purple; */
+    padding: 0 20px;
+}
+
+.member-header h3 {
+    margin-right: 10px;
+}
+
+.member-header p {
+    margin-top: 22px;
+}
+
+.member-header select {
+    height: 22px;
+    margin-top: 18px;
+}
+
+.member-photo{
+    /* background:yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+.member-photo img{
+    width: 100px;
+    height: 110px;
+    /* background:green; */
+    margin-left: 65px;
+}
+
+.member-charName{
+    color: white;
+    height:30px;
+    margin: 0 auto;
+    /* background:grey; */
+}

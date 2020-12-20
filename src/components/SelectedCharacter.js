@@ -3,15 +3,17 @@ import React, { useState } from 'react';
 export const selectContext = React.createContext();
 export const photoContext = React.createContext();
 
+
 const SelectedCharacter = ({children}) => {
 
     const [selectedCharacter, setSelectedCharacter] = useState()
-    const [selectedPhoto, setSelectedPhoto] = useState()
+    const [selectedPhoto, setSelectedPhoto] = useState('images/question.png')
+
 
     return(
         <selectContext.Provider value={[selectedCharacter, setSelectedCharacter]}>
             <photoContext.Provider value={[selectedPhoto, setSelectedPhoto]}>
-                {children}
+                     {children}
             </photoContext.Provider>
         </selectContext.Provider>
     )

@@ -22,7 +22,7 @@ const Character = (props) =>{
 
     return(
         <div className="character" onClick={handleClick}>
-            <img className="img" src={photo} alt={characterDetail.name} ></img>
+            <img className="char-img" src={photo} alt={characterDetail.name} ></img>
             <p className="char-name">{characterDetail.name}</p>
         </div>
     )
