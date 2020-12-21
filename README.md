@@ -1,6 +1,6 @@
 # This App is developed by React
 
-I have deployed the website on AWS, her is the URL:
+I have deployed the website on AWS, here is the URL:
 
 http://react-marvel-soccer-team.s3-website-ap-southeast-2.amazonaws.com/
 
